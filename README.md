@@ -1,3 +1,3 @@
-# Node.js-KSQL
+# KSQL for Node.js
 
 WIP

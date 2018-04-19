@@ -5,7 +5,16 @@
   "repository": "git@github.com:nodefluent/ksql.git",
   "author": "Chris Froehlingsdorf <chris@5cf.de>",
   "license": "MIT",
+  "scripts": {
+    "test": "ts-node test/int/General.test.ts",
+    "generate": "antlr4 -Xexact-output-dir -Dlanguage=JavaScript ./parser/SqlBase.g4 -o parser/ksql"
+  },
   "dependencies": {
+    "@types/node": "^9.6.5",
     "antlr4": "^4.7.1"
+  },
+  "devDependencies": {
+    "ts-node": "^6.0.0",
+    "typescript": "^2.8.1"
   }
 }
